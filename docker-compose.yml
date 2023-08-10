@@ -1,0 +1,8 @@
+services:
+  rust:
+    image: rust:latest
+    container_name: rust
+    volumes:
+      - ./projects:/projects
+    working_dir: /projects
+    tty: true
